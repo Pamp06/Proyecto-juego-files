@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://drxvcsogwup1j"]
+[gd_scene load_steps=5 format=3 uid="uid://drxvcsogwup1j"]
 
-[ext_resource type="Texture2D" uid="uid://bpeq4o4wvucn7" path="res://Resources/UI/DatetimeUI V2.png" id="1_2246s"]
+[ext_resource type="Texture2D" uid="uid://cda3d0v6nfcxx" path="res://Resources/UI/DatetimeUI V2.png" id="1_2246s"]
 [ext_resource type="Texture2D" uid="uid://be1ydy8v6wrqe" path="res://Resources/UI/axe.png" id="1_qdvrb"]
 [ext_resource type="FontFile" uid="uid://chtstvitptx7i" path="res://Resources/font/BelanidiSerif-Regular.otf" id="2_2246s"]
 [ext_resource type="Texture2D" uid="uid://dkfeprej3sy8s" path="res://Resources/UI/pickaxe.png" id="2_nf4gj"]
-[ext_resource type="Texture2D" uid="uid://lhq1c7d1w6dk" path="res://Resources/UI/Inventory Bar.png" id="5_q7pk6"]
 
 [node name="UI" type="CanvasLayer"]
 
@@ -21,49 +20,47 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -224.0
-offset_top = -34.0
-offset_right = 26.0
-offset_bottom = 266.0
+offset_left = -64.0
+offset_bottom = 64.0
 grow_horizontal = 0
 texture = ExtResource("1_2246s")
 
 [node name="Hora" type="RichTextLabel" parent="Control"]
 layout_mode = 0
-offset_left = 1036.0
-offset_top = 102.0
-offset_right = 1089.0
-offset_bottom = 142.0
+offset_left = 1046.0
+offset_top = 86.0
+offset_right = 1099.0
+offset_bottom = 126.0
 theme_override_fonts/normal_font = ExtResource("2_2246s")
 text = "00:00"
 scroll_active = false
 
 [node name="Dia" type="RichTextLabel" parent="Control"]
 layout_mode = 0
-offset_left = 1038.0
-offset_top = 132.0
-offset_right = 1087.0
-offset_bottom = 172.0
+offset_left = 1046.0
+offset_top = 107.0
+offset_right = 1095.0
+offset_bottom = 147.0
 theme_override_fonts/normal_font = ExtResource("2_2246s")
 text = "00"
 scroll_active = false
 
 [node name="Mes" type="RichTextLabel" parent="Control"]
 layout_mode = 0
-offset_left = 1066.0
-offset_top = 132.0
-offset_right = 1115.0
-offset_bottom = 172.0
+offset_left = 1073.0
+offset_top = 106.0
+offset_right = 1122.0
+offset_bottom = 146.0
 theme_override_fonts/normal_font = ExtResource("2_2246s")
 text = "00"
 scroll_active = false
 
 [node name="Dinero" type="RichTextLabel" parent="Control"]
 layout_mode = 0
-offset_left = 1009.0
-offset_top = 231.0
-offset_right = 1133.0
-offset_bottom = 271.0
+offset_left = 1012.0
+offset_top = 131.0
+offset_right = 1136.0
+offset_bottom = 171.0
 theme_override_fonts/normal_font = ExtResource("2_2246s")
 text = "BS: 000000"
 scroll_active = false
@@ -107,8 +104,3 @@ offset_top = -64.0
 offset_right = 64.0
 grow_vertical = 0
 texture = ExtResource("2_nf4gj")
-
-[node name="InventoryBar" type="Sprite2D" parent="Control3"]
-position = Vector2(620, 529)
-scale = Vector2(3.75214, 3.6)
-texture = ExtResource("5_q7pk6")
